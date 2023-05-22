@@ -67,7 +67,7 @@ Advisor.forEach(item => {
             <th>${item.customer}</th>
             <th>${item.wallet} <img src="../../../assets/icon/Carrot.svg" alt=""></th>
             <th>
-                <img src="../../../assets/icon/Eye.svg" style="cursor: pointer;" alt="">
+                <img src="../../../assets/icon/Eye.svg" onclick="detail()" style="cursor: pointer;" alt="">
                 <img src="../../../assets/icon/edit.svg" alt="">
                 <img src="../../../assets/icon/icontrash.svg" alt="">
             </th>
@@ -78,5 +78,9 @@ Advisor.forEach(item => {
     AdvisorTable.innerHTML += Row
 })
 
+
+function detail(){
+    location.replace('../AdvisorDetail/index.html')
+}
 
 
